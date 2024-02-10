@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Quake | Rae Cayabyab</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+
+
+
+  <!-- fonts style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../css/responsive.css" rel="stylesheet" />
+
+  <!--Scroll Reveal js source-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="../images/logo.svg"></a>
+        <ul id="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#works">WORKS</a></li>
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div class="project-details">
+        <img class="section-bg" src="../images/img-bg-1.png">
+        <div class="pd-column">
+            <h3 class="pd-title t-orange t-center">Quake (3D)</h3>
+            <h5 class="pd-description t-center t-white">A 3D model of the Marvel's Agents of S.H.I.E.L.D. superhero character, Daisy Johnson "Quake". <br><br>
+            Created as 3D Sculpting and Rigging course requirement.</h5>
+            <h4 class="pd-subhead t-blue t-center">SKILLS</h4>
+            <h5 class="pd-description t-center t-white">Creative &#38; Art Direction, 3D Modeling (Hard Surface and Organic), 3D Sculpting, and Graphic Design &#38; Layout</h5>
+            <h4 class="pd-subhead t-blue t-center">TOOLBOX</h4>
+            <h5 class="pd-description t-center t-white">Blender and Adobe Photoshop</h5>
+
+            <img class="wave" src="../images/img-wave-top.png">
+            <div class="presentation">
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-1.png">
+
+                <h4 class="pd-p w-top-margin t-left t-black">3D Modeling Process</h4>
+                <h6 class="pd-p t-black w-bottom-margin t-left">This project holds a special place in my heart as it marks my first venture into 3D sculpting of a complete humanoid character.</h6>
+                <p class="pd-p t-black">Sculpting</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-5.png">
+
+                <p class="pd-p t-black">Retopology</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-6.png">
+
+                <p class="pd-p t-black">UV Unwrapping</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-7.png">
+
+                <p class="pd-p t-black">Materials & Texturing</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-8.png">
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-9.png">
+                <p class="pd-p t-black">I chose to recreate my favorite character, Daisy Johnson "Quake", from a beloved sci-fi TV series. Through meticulous attention to detail, I captured her essence, from the futuristic accessories adorning her costume, such as the gauntlet and special belt, to the sleek, dark-colored attire that unmistakably portrays her as both a superhero and a special agent.</p>
+
+                <h4 class="pd-p t-left t-black">Facial Expression using Shape Keys</h4>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-4.png">                
+                
+                <h4 class="pd-p t-left t-black">Action Figure Mockup</h4>
+                <img class="pd-pres-img" src="../images/img-quake-2.png">                  
+                <p class="pd-p t-black">Transforming my 3D creation into a lifelike action figure fit for store shelves, I crafted a mockup packaging to enhance its appeal as a collectible item.</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-quake-3.png">  
+
+                <div class="buttons">
+                  <a class="back-to" href="../index.html#works">Back to Works</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--Navbar Show On Scroll-->
+      <script>
+        const body = document.body;
+        let lastScroll = 0;
+    
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.pageYOffset;
+    
+          if (currentScroll <= 0) {
+            body.classList.remove("scroll-up");
+            return;
+          }
+    
+          if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-up");
+            body.classList.add("scroll-down");
+          } 
+          
+          if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-down");
+            body.classList.add("scroll-up");
+          }
+    
+          lastScroll = currentScroll;
+        });
+      </script>
+
+      <!--Scroll Reveal Script-->
+    <script>
+        ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1000,
+        delay: 400,
+        });
+
+
+        ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left' });
+
+        ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom'});
+        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom'});
+    </script>
+
+    <!--Shine Effect-->
+      <script>
+        const projects = document.querySelectorAll('.works-section .project-title');
+    
+        projects.forEach(project => {
+          project.addEventListener('mousemove', e => {
+            // Get the position of the cursor within the project element
+            const x = e.clientX - project.getBoundingClientRect().left;
+            const y = e.clientY - project.getBoundingClientRect().top;
+    
+            // Update the radial-gradient position based on the cursor position
+            project.style.setProperty( '--x', x + 'px' );
+            project.style.setProperty( '--y', y + 'px' );
+          });
+        });
+      </script>
+
+</body>
+
+</html>

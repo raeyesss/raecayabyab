@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Photography Course | Rae Cayabyab</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+
+
+
+  <!-- fonts style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../css/responsive.css" rel="stylesheet" />
+
+  <!--Scroll Reveal js source-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="../images/logo.svg"></a>
+        <ul id="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#works">WORKS</a></li>
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div class="project-details">
+        <img class="section-bg" src="../images/img-bg-1.png">
+        <div class="pd-column">
+            <h3 class="pd-title t-orange t-center">Photography Course - Activity Entries</h3>
+            <h5 class="pd-description t-center t-white">A varied compilation highlighting images captured throughout my Digital Photography course.</h5>
+            <h4 class="pd-subhead t-blue t-center">SKILLS</h4>
+            <h5 class="pd-description t-center t-white">Creative &#38; Art Direction, Photoshoot, Photo Editing, </h5>
+            <h4 class="pd-subhead t-blue t-center">TOOLBOX</h4>
+            <h5 class="pd-description t-center t-white">Adobe Photoshop and Nikon D3400 with Kit lens &#38; Yongnuo 50mm 1.8 Lens</h5>
+
+            <img class="wave" src="../images/img-wave-top.png">
+            <div class="presentation">
+
+                <h4 class="pd-p w-top-margin t-left t-black">Photo Composition Activity</h4>
+                <img class="pd-pres-img" src="../images/img-pcr-1.png">
+                <p class="pd-p t-black w-bottom-margin">Filling the Frame, "UFC: Unforeseen Flower Clash"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-2.png">
+                <p class="pd-p t-black w-bottom-margin">Frame within a Frame, "Beyond the Loop: Exiting the Tunnel of Uncertainty"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-3.png">
+                <p class="pd-p t-black w-bottom-margin">Vertical Composition, "Lightbearer: Spreading Radiant Joy"</p>
+
+                <h4 class="pd-p w-top-margin t-left t-black">Natural &#38; Artificial Lighting Activity</h4>
+                <img class="pd-pres-img" src="../images/img-pcr-4.png">
+                <p class="pd-p t-black w-bottom-margin">Window Light, "Lukewarm Learner"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-5.png">
+                <p class="pd-p t-black w-bottom-margin">Dappled Light, "Let Your Light Shine"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-6.png">
+                <p class="pd-p t-black w-bottom-margin">Reflected Light, "Morning Booster"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-7.png">
+                <p class="pd-p t-black w-bottom-margin">Soft Light, "Sonshine"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-8.png">
+                <p class="pd-p t-black w-bottom-margin">Hard Light, "Undead Leftover"</p>
+
+                <h4 class="pd-p w-top-margin t-left t-black">Short &#38; Long Exposure Activity</h4>
+                <img class="pd-pres-img" src="../images/img-pcr-9.png">
+                <p class="pd-p t-black w-bottom-margin">Short Exposure, "Sanitary Splash"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-10.png">
+                <p class="pd-p t-black w-bottom-margin">Long Exposure, "Intense Peak"</p>
+
+                <h4 class="pd-p w-top-margin t-left t-black">Still Life with Artificial Lighting Activity</h4>
+                <img class="pd-pres-img" src="../images/img-pcr-11.png">
+                <p class="pd-p t-black w-bottom-margin">"Midnight Reminisce"</p>
+                <img class="pd-pres-img w-top-margin" src="../images/img-pcr-12.png">
+                <p class="pd-p t-black w-bottom-margin">"Squeaky Smooch"</p>
+
+                <div class="buttons">
+                  <a class="back-to" href="../index.html#works">Back to Works</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--Navbar Show On Scroll-->
+      <script>
+        const body = document.body;
+        let lastScroll = 0;
+    
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.pageYOffset;
+    
+          if (currentScroll <= 0) {
+            body.classList.remove("scroll-up");
+            return;
+          }
+    
+          if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-up");
+            body.classList.add("scroll-down");
+          } 
+          
+          if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-down");
+            body.classList.add("scroll-up");
+          }
+    
+          lastScroll = currentScroll;
+        });
+      </script>
+
+      <!--Scroll Reveal Script-->
+    <script>
+        ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1000,
+        delay: 400,
+        });
+
+
+        ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left' });
+
+        ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom'});
+        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom'});
+    </script>
+
+    <!--Shine Effect-->
+      <script>
+        const projects = document.querySelectorAll('.works-section .project-title');
+    
+        projects.forEach(project => {
+          project.addEventListener('mousemove', e => {
+            // Get the position of the cursor within the project element
+            const x = e.clientX - project.getBoundingClientRect().left;
+            const y = e.clientY - project.getBoundingClientRect().top;
+    
+            // Update the radial-gradient position based on the cursor position
+            project.style.setProperty( '--x', x + 'px' );
+            project.style.setProperty( '--y', y + 'px' );
+          });
+        });
+      </script>
+
+</body>
+
+</html>

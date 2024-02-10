@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PetCha | Rae Cayabyab</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+
+
+
+  <!-- fonts style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../css/responsive.css" rel="stylesheet" />
+
+  <!--Scroll Reveal js source-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="../images/logo.svg"></a>
+        <ul id="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#works">WORKS</a></li>
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div class="project-details">
+        <img class="section-bg" src="../images/img-bg-1.png">
+        <div class="pd-column">
+            <h3 class="pd-title t-orange t-center">PetCha Official Website</h3>
+            <h5 class="pd-description t-center t-white">Contributing to the entirety of PangCat's final capstone in college, this website was created to access and download the mobile application of the same name. It features information about our thesis, colorful graphics, and simple, yet, engaging web animations.</h5>
+            <h4 class="pd-subhead t-blue t-center">SKILLS</h4>
+            <h5 class="pd-description t-white t-center">Web development and animation &#40;using HTML, CSS, &#38; JavaScript&#41;, Web design, Graphic Design, and Layout</h5>
+            <h4 class="pd-subhead t-blue t-center">TOOLBOX</h4>
+            <h5 class="pd-description t-center t-white">Visual Studio Code, Figma, GitHub, &#38; AniJS</h5>
+
+            <img class="wave" src="../images/img-wave-top.png">
+            <div class="presentation">
+                <img class="pd-pres-img" src="../images/img-petcha-1.png">
+                <p class="pd-p t-black">Created as a complementary output to the research on 'Procrast-Innate: Behavioral Patterns and Procrastination Tendencies of Arts and Design Students During Online Classes,' PetCha by PangCat is a mobile app that aims to aid in procrastination tendencies and stimulate creativity among users.<br><br>
+                To aid our solution, our team provided an informative website to navigate our Features, discuss about our Team and, about PetCha.</p>
+
+                <h4 class="pd-p w-top-margin t-left t-black">Homepage Design</h4>
+                <img class="pd-pres-img" src="../images/img-petcha-2.png">
+                <p class="pd-p t-black">The homepage emphasizes the app's functionalities and provides a link to download it. We opted for 2D illustrations as the primary design element of the website, seamlessly integrating them with the 3D isometric assets from the app to harmonize both visual components.</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-petcha-3.png">
+
+                <h4 class="pd-p w-top-margin t-left t-black">About Pages Design</h4>
+                <img class="pd-pres-img" src="../images/img-petcha-4.png">
+                <p class="pd-p t-black">The "About Us" page offers insights into our creators, features an infographic, and presents an overview of our research, complemented by engaging web animations triggered on scroll and hover.</p>
+                <img class="pd-pres-img" src="../images/img-petcha-5.png">
+                <p class="pd-p t-black">The "How It Works" page offers video tutorials for navigating the mobile app.</p>
+                <img class="pd-pres-img w-bottom-margin" src="../images/img-petcha-6.png">
+
+                <h4 class="pd-p w-top-margin t-left t-black">Download Page Design</h4>
+                <img class="pd-pres-img" src="../images/img-petcha-7.png">
+                <p class="pd-p t-black w-bottom-margin">The download page offers information about the APK file, along with step-by-step instructions for installing it on an Android device. Users can also access and download previous versions of the app.</p>
+
+                <h4 class="pd-p w-top-margin t-left t-black">User-Friendly Additions</h4>
+                <h6 class="pd-p t-black w-bottom-margin t-left">To improve usability and convenience for all visitors, I've incorporated several enhancements throughout the website.</h6>
+                <video class="pd-vid" autoplay="autoplay" muted loop>
+                  <source src="../videos/vid-navbar.mp4"></video>
+                <p class="pd-p t-black w-bottom-margin">Users can navigate effortlessly through the scroll-responsive navbar. It discreetly hides when scrolling down and reappears instantly with an upward scroll, ensuring easy access to site features at any point.</p>
+                <img class="pd-pres-img" src="../images/img-petcha-8.png">
+                <p class="pd-p t-black w-bottom-margin">This website is mobile-responsive, ensuring an optimal viewing experience across all devices, including smartphones.</p>
+
+                <div class="buttons">
+                  <a class="back-to" href="https://pang-cat.github.io/petcha/" target="_blank">Visit Website</a>
+                  <a class="back-to" href="../index.html#works">Back to Works</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--Navbar Show On Scroll-->
+      <script>
+        const body = document.body;
+        let lastScroll = 0;
+    
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.pageYOffset;
+    
+          if (currentScroll <= 0) {
+            body.classList.remove("scroll-up");
+            return;
+          }
+    
+          if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-up");
+            body.classList.add("scroll-down");
+          } 
+          
+          if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-down");
+            body.classList.add("scroll-up");
+          }
+    
+          lastScroll = currentScroll;
+        });
+      </script>
+
+      <!--Scroll Reveal Script-->
+    <script>
+        ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1000,
+        delay: 400,
+        });
+
+
+        ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left' });
+
+        ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom'});
+        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom'});
+    </script>
+
+    <!--Shine Effect-->
+      <script>
+        const projects = document.querySelectorAll('.works-section .project-title');
+    
+        projects.forEach(project => {
+          project.addEventListener('mousemove', e => {
+            // Get the position of the cursor within the project element
+            const x = e.clientX - project.getBoundingClientRect().left;
+            const y = e.clientY - project.getBoundingClientRect().top;
+    
+            // Update the radial-gradient position based on the cursor position
+            project.style.setProperty( '--x', x + 'px' );
+            project.style.setProperty( '--y', y + 'px' );
+          });
+        });
+      </script>
+
+</body>
+
+</html>
