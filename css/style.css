@@ -500,11 +500,15 @@
     }
 
     .w-top-margin{
-        margin: 64px auto auto auto;
+        margin-top: 64px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .w-bottom-margin{
-        margin: auto auto 40px auto;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .pd-vid{
