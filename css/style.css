@@ -584,5 +584,30 @@
 
 /***** TEXT CLASS END*****/
 
+/***** FAUZ SCREEN SIZE START*****/
+#placeholder {
+    position: absolute;
+    visibility: visible;
+    aspect-ratio: 16/9;
+    width: 900px;
+}
+
+#iframeContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flexbox;
+    justify-content: start;
+    align-items: start;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+#my-iframe {
+    transform-origin: top left;
+    aspect-ratio: 16/9;
+    border: 0;
+}
+/***** FAUX SCREEN SIZE START*****/
+
 /***** SECTION START*****/
 /***** SECTION END*****/
