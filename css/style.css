@@ -589,6 +589,10 @@
         color: var(--white);
     }
 
+    .pd-ps-t-margin{
+        margin-top: 14px;
+    }
+
 /***** TEXT CLASS END*****/
 
 /***** EMBED WEBSITE START*****/
