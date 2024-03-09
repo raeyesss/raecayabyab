@@ -478,6 +478,13 @@
         font-weight: 500;
     }
 
+    .pd-ps{
+        width: 900px;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
     .back-to{
         font-size: 16px;
         font-weight: 800;
@@ -584,12 +591,17 @@
 
 /***** TEXT CLASS END*****/
 
-/***** FAUZ SCREEN SIZE START*****/
+/***** EMBED WEBSITE START*****/
+
+.ew-align{
+    text-align: center;
+}
+
 #placeholder {
     position: absolute;
     visibility: visible;
     aspect-ratio: 16/9;
-    width: 900px;
+    width: 1200px;
 }
 
 #iframeContainer {
@@ -607,7 +619,7 @@
     aspect-ratio: 16/9;
     border: 0;
 }
-/***** FAUX SCREEN SIZE START*****/
+/***** EMBED WEBSITE START*****/
 
 /***** SECTION START*****/
 /***** SECTION END*****/
