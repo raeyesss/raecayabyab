@@ -26,6 +26,18 @@
   text-decoration: none;
 }
 
+body::-webkit-scrollbar { /*scrollbar*/
+    width: 12px;
+  }
+
+body::-webkit-scrollbar-track { /*scrollbar bg*/ 
+    background-color: var(--ash-white);
+}
+
+body::-webkit-scrollbar-thumb { /*scrollbar thumb*/
+    background-color: var(--indigo);
+}
+
 /*****NAVIGATION BAR START*****/
 
     nav{
@@ -84,6 +96,11 @@
     nav li a:hover{
         color: var(--light-blue);
         transition: all .2s ease;
+    }
+
+    #b-menu,
+    #x-menu{
+        display: none;
     }
 /*****NAVIGATION BAR END*****/
 
@@ -301,7 +318,7 @@
 
     .about-section p{
         width: 900px;
-        margin: 40pxauto auto auto;
+        margin: 40px auto auto auto;
 
         font-size: 24px;
         font-weight: 500;
@@ -328,6 +345,12 @@
         width: 100%;
     }
 
+    .absolute-fix{
+        background: url(../images/img-bg-3.png);
+        background-size: 100vw auto;
+        background-repeat: repeat-y;
+    }
+
 /*****ABOUT SECTION END*****/
 
 
@@ -340,7 +363,7 @@
         justify-content: flex-start;
         align-items: center;
 
-        margin: 407px auto auto auto;
+        margin: 207px auto 335px auto;
     }
 
     .contact-section .contact-column{

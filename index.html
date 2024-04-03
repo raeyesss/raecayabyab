@@ -29,17 +29,26 @@
 
   <!--Scroll Reveal js source-->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--Font Awesome Icons-->
+  <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+  <link href="fontawesome/css/regular.css" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <a class="logo" href="index.html"><img src="images/logo.svg"></a>
-        <ul id="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#works">WORKS</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+        <i id="b-menu" class="fa fa-bars" aria-hidden="true" onclick="menuShow()"></i>
+        <ul id="menu" class="menu-hide">
+            <i id="x-menu" class="fa fa-xmark" aria-hidden="true" onclick="menuHide()"></i>
+            <li onclick="menuHide()"><a href="index.html">HOME</a></li>
+            <li onclick="menuHide()"><a href="#works">WORKS</a></li>
+            <li onclick="menuHide()"><a href="#about">ABOUT</a></li>
+            <li onclick="menuHide()"><a href="#contact">CONTACT</a></li>
         </ul>
+        <h9 id="showHide" hidden="true">true</h9>
     </nav>
 
     <div class="hero-section">
@@ -175,7 +184,8 @@
                 </div>
             </div>
         </div>
-        <img class="section-bg" src="images/img-bg.png">
+        <img id="sbg-1" class="section-bg hidden" src="images/img-bg.png">
+        <img id="sbg-2" class="section-bg hidden" src="images/img-bg-3.png">
     </div>
 
     <!---Hero BG size to Overlay-->
@@ -276,7 +286,7 @@
 
         ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
         ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom', reset: false});
-        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom'});
+        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom', reset: false});
     </script>
 
     <!--Shine Effect-->
@@ -295,6 +305,53 @@
           });
         });
       </script>
+
+    <!--Navbar Main Menu Show OnClick-->
+    <script>
+        function menuShow() {
+            const mainMenu = document.getElementById('menu');
+            var visible = document.getElementById('showHide').innerHTML;
+
+            if (visible == "false") {
+                mainMenu.classList.remove("menu-show");
+                mainMenu.classList.add("menu-hide");
+                document.getElementById('showHide').innerHTML = "true";
+            } else {
+                mainMenu.classList.add("menu-show");
+                mainMenu.classList.remove("menu-hide");
+                document.getElementById('showHide').innerHTML = "false";
+            }
+            toggleScroll();
+        }
+
+        //Navbar Main Menu Hide OnClick
+        function menuHide() {
+            const mainMenu = document.getElementById('menu');
+            var visible = document.getElementById('showHide').innerHTML;
+
+            if (visible == "false") {
+                mainMenu.classList.remove("menu-show");
+                mainMenu.classList.add("menu-hide");
+                document.getElementById('showHide').innerHTML = "true";
+            } else {
+                mainMenu.classList.add("menu-show");
+                mainMenu.classList.remove("menu-hide");
+                document.getElementById('showHide').innerHTML = "false";
+            }
+            toggleScrollBack()
+        }
+
+        // Pop Up Disable Scroll Script
+        function toggleScroll() {
+            var body = document.getElementsByTagName('body')[0];
+            body.style.overflowY = (body.style.overflowY == 'hidden') ? 'auto' : 'hidden';
+        }
+
+        function toggleScrollBack() {
+            var body = document.getElementsByTagName('body')[0];
+            body.style.overflowY = (body.style.overflowY == 'visible') ? 'auto' : 'visible';
+        }
+    </script>
 
 </body>
 
