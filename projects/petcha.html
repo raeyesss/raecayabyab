@@ -29,23 +29,32 @@
 
   <!--Scroll Reveal js source-->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--Font Awesome Icons-->
+  <link href="../fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="../fontawesome/css/brands.css" rel="stylesheet">
+  <link href="../fontawesome/css/solid.css" rel="stylesheet">
+  <link href="../fontawesome/css/regular.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a class="logo" href="index.html"><img src="../images/logo.svg"></a>
-        <ul id="menu">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../index.html#works">WORKS</a></li>
-            <li><a href="../index.html#about">ABOUT</a></li>
-            <li><a href="../index.html#contact">CONTACT</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a class="logo" href="../index.html"><img src="../images/logo.svg"></a>
+    <i id="b-menu" class="fa fa-bars" aria-hidden="true" onclick="menuShow()"></i>
+    <ul id="menu" class="menu-hide">
+        <i id="x-menu" class="fa fa-xmark" aria-hidden="true" onclick="menuHide()"></i>
+        <li onclick="menuHide()"><a href="index.html">HOME</a></li>
+        <li onclick="menuHide()"><a href="#works">WORKS</a></li>
+        <li onclick="menuHide()"><a href="#about">ABOUT</a></li>
+        <li onclick="menuHide()"><a href="#contact">CONTACT</a></li>
+    </ul>
+    <h9 id="showHide" hidden="true">true</h9>
+  </nav>
 
     
 
     <div class="project-details">
-        <img class="section-bg" src="../images/img-bg-1.png">
+        <img class="section-bg" src="../images/img-bg-3.png">
         <div class="pd-column">
             <h3 class="pd-title t-orange t-center">PetCha Official Website</h3>
             <h5 class="pd-description t-center t-white">Contributing to the entirety of PangCat's final capstone in college, this website was created to access and download the mobile application of the same name. It features information about our thesis, colorful graphics, and simple, yet, engaging web animations.</h5>
@@ -85,7 +94,7 @@
                 <p class="pd-p t-black w-bottom-margin">This website is mobile-responsive, ensuring an optimal viewing experience across all devices, including smartphones.</p>
 
                 <div class="buttons">
-                  <a class="back-to" href="https://pang-cat.github.io/petcha/" target="_blank">Visit Website</a>
+                  <a class="back-to bt-light" href="https://pang-cat.github.io/petcha/" target="_blank">Visit Website</a>
                   <a class="back-to" href="../index.html#works">Back to Works</a>
                 </div>
             </div>
@@ -153,6 +162,53 @@
           });
         });
       </script>
+
+    <!--Navbar Main Menu Show OnClick-->
+    <script>
+      function menuShow() {
+          const mainMenu = document.getElementById('menu');
+          var visible = document.getElementById('showHide').innerHTML;
+
+          if (visible == "false") {
+              mainMenu.classList.remove("menu-show");
+              mainMenu.classList.add("menu-hide");
+              document.getElementById('showHide').innerHTML = "true";
+          } else {
+              mainMenu.classList.add("menu-show");
+              mainMenu.classList.remove("menu-hide");
+              document.getElementById('showHide').innerHTML = "false";
+          }
+          toggleScroll();
+      }
+
+      //Navbar Main Menu Hide OnClick
+      function menuHide() {
+          const mainMenu = document.getElementById('menu');
+          var visible = document.getElementById('showHide').innerHTML;
+
+          if (visible == "false") {
+              mainMenu.classList.remove("menu-show");
+              mainMenu.classList.add("menu-hide");
+              document.getElementById('showHide').innerHTML = "true";
+          } else {
+              mainMenu.classList.add("menu-show");
+              mainMenu.classList.remove("menu-hide");
+              document.getElementById('showHide').innerHTML = "false";
+          }
+          toggleScrollBack()
+      }
+
+      // Pop Up Disable Scroll Script
+      function toggleScroll() {
+          var body = document.getElementsByTagName('body')[0];
+          body.style.overflowY = (body.style.overflowY == 'hidden') ? 'auto' : 'hidden';
+      }
+
+      function toggleScrollBack() {
+          var body = document.getElementsByTagName('body')[0];
+          body.style.overflowY = (body.style.overflowY == 'visible') ? 'auto' : 'visible';
+      }
+  </script>
 
 </body>
 

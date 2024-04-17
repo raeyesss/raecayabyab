@@ -8,6 +8,8 @@
     --light-blue: #7dcfea;
     --pink: #d489b2;
     --purple: #644490;
+    --bt-light: #b3b2d8;
+    /*#cbbae4*/
   
   }
   
@@ -501,6 +503,10 @@ body::-webkit-scrollbar-thumb { /*scrollbar thumb*/
         font-weight: 500;
     }
 
+    .project-details h6{
+        margin-top: 0;
+    }
+
     .pd-ps{
         width: 900px;
         font-size: 12px;
@@ -518,6 +524,17 @@ body::-webkit-scrollbar-thumb { /*scrollbar thumb*/
         border-radius: 15px;
         transition: all .2s ease;
         margin: auto;
+    }
+
+    .bt-light{
+        background-color: var(--bt-light);
+        border:  solid 3px var(--bt-light);
+    }
+
+    .bt-light:hover{
+        color: #8784b3 !important;
+        background-color: var(--ash-white) !important;
+        border:  solid 3px var(--bt-light) !important;
     }
 
     .back-to:hover{
