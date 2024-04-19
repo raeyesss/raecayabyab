@@ -29,23 +29,32 @@
 
   <!--Scroll Reveal js source-->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--Font Awesome Icons-->
+  <link href="../fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="../fontawesome/css/brands.css" rel="stylesheet">
+  <link href="../fontawesome/css/solid.css" rel="stylesheet">
+  <link href="../fontawesome/css/regular.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a class="logo" href="index.html"><img src="../images/logo.svg"></a>
-        <ul id="menu">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../index.html#works">WORKS</a></li>
-            <li><a href="../index.html#about">ABOUT</a></li>
-            <li><a href="../index.html#contact">CONTACT</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a class="logo" href="../index.html"><img src="../images/logo.svg"></a>
+    <i id="b-menu" class="fa fa-bars" aria-hidden="true" onclick="menuShow()"></i>
+    <ul id="menu" class="menu-hide">
+        <i id="x-menu" class="fa fa-xmark" aria-hidden="true" onclick="menuHide()"></i>
+        <li onclick="menuHide()"><a href="../index.html">HOME</a></li>
+        <li onclick="menuHide()"><a href="../index.html#works">WORKS</a></li>
+        <li onclick="menuHide()"><a href="../index.html#about">ABOUT</a></li>
+        <li onclick="menuHide()"><a href="../index.html#contact">CONTACT</a></li>
+    </ul>
+    <h9 id="showHide" hidden="true">true</h9>
+  </nav>
 
     
 
     <div class="project-details">
-        <img class="section-bg" src="../images/img-bg-1.png">
+        <img class="section-bg" src="../images/img-bg-3.png">
         <div class="pd-column">
             <h3 class="pd-title t-orange t-center">Ignite | Unlock: Healing</h3>
             <h5 class="pd-description t-center t-white">IGNITE Conference is a quarterly event organized by Cavite City Foursquare Youth (CCFY). In 2021, the events were held fully-online through Facebook Live due to the pandemic.</h5>
@@ -73,74 +82,14 @@
                 <iframe class="pd-vid vid-height w-bottom-margin" src="https://www.youtube.com/embed/uycy9uE9GmA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <div class="buttons">
-                  <a class="back-to" href="https://www.facebook.com/CaviteCityFoursquareYouth/videos/183472876555951" target="_blank">Watch Event</a>
+                  <a class="back-to bt-light" href="https://www.facebook.com/CaviteCityFoursquareYouth/videos/183472876555951" target="_blank">Watch Event</a>
                   <a class="back-to" href="../index.html#works">Back to Works</a>
                 </div>
             </div>
         </div>
     </div>
 
-      <!--Navbar Show On Scroll-->
-      <script>
-        const body = document.body;
-        let lastScroll = 0;
-    
-        window.addEventListener("scroll", () => {
-          const currentScroll = window.pageYOffset;
-    
-          if (currentScroll <= 0) {
-            body.classList.remove("scroll-up");
-            return;
-          }
-    
-          if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-            body.classList.remove("scroll-up");
-            body.classList.add("scroll-down");
-          } 
-          
-          if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-            body.classList.remove("scroll-down");
-            body.classList.add("scroll-up");
-          }
-    
-          lastScroll = currentScroll;
-        });
-      </script>
-
-      <!--Scroll Reveal Script-->
-    <script>
-        ScrollReveal({
-        reset: false,
-        distance: '60px',
-        duration: 1000,
-        delay: 400,
-        });
-
-
-        ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left' });
-        ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left' });
-
-        ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
-        ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom'});
-        ScrollReveal().reveal('.icons', { distance: '60px', delay: 600, origin: 'bottom'});
-    </script>
-
-    <!--Shine Effect-->
-      <script>
-        const projects = document.querySelectorAll('.works-section .project-title');
-    
-        projects.forEach(project => {
-          project.addEventListener('mousemove', e => {
-            // Get the position of the cursor within the project element
-            const x = e.clientX - project.getBoundingClientRect().left;
-            const y = e.clientY - project.getBoundingClientRect().top;
-    
-            // Update the radial-gradient position based on the cursor position
-            project.style.setProperty( '--x', x + 'px' );
-            project.style.setProperty( '--y', y + 'px' );
-          });
-        });
-      </script>
+    <script src="../js/script.js"></script>
 
 </body>
 
