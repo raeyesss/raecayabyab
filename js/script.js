@@ -94,45 +94,46 @@ ScrollReveal({
     delay: 400,
 });
 
-ScrollReveal().reveal('.wave-ani', {
-    distance: '90px',
-    delay: 400,
-    origin: 'left',
-    afterReveal: function (domEl) {
-        // Reset and play the video when revealed
-        resetAndPlayVideo();
-    },
-    beforeReset: function (domEl) {
-        // Pause the video when the reveal is reset
-        pauseVideo();
-    },
-});
+// Wave Animation Reveal Script
+ ScrollReveal().reveal('.wave-ani', {
+     distance: '90px',
+     delay: 400,
+     origin: 'left',
+//     afterReveal: function (domEl) {
+//         // Reset and play the video when revealed
+//         resetAndPlayVideo();
+//     },
+//     beforeReset: function (domEl) {
+//         // Pause the video when the reveal is reset
+//         pauseVideo();
+//     },
+ });
 
-function resetAndPlayVideo() {
-    const ani = document.getElementById('wave-ani');
+// function resetAndPlayVideo() {
+//     const ani = document.getElementById('wave-ani');
 
-    // Reset the video by setting currentTime to 0
-    ani.currentTime = 0;
+//     // Reset the video by setting currentTime to 0
+//     ani.currentTime = 0;
 
 
-    // Add an event listener for the end of the video to reset and play again
-    ani.addEventListener('ended', function () {
-        resetAndPlayVideo();
-    });
+//     // Add an event listener for the end of the video to reset and play again
+//     ani.addEventListener('ended', function () {
+//         resetAndPlayVideo();
+//     });
 
-    // Play the video
-    ani.play();
-}
+//     // Play the video
+//     ani.play();
+// }
 
-function pauseVideo() {
-    const video = document.getElementById('wave-ani');
+// function pauseVideo() {
+//     const video = document.getElementById('wave-ani');
 
-    // Pause the video
-    video.pause();
-}
+//     // Pause the video
+//     video.pause();
+// }
 
-ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left' });
-ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left' });
+ScrollReveal().reveal('.demo-reel', { distance: '90px', delay: 200, origin: 'left', reset: false });
+ScrollReveal().reveal('.about-heading, .about-p', { distance: '90px', delay: 500, origin: 'left', reset: false });
 
 ScrollReveal().reveal('.project', { distance: '60px', delay: 100, origin: 'top' });
 ScrollReveal().reveal('.contact-column', { distance: '60px', delay: 400, origin: 'bottom', reset: false });
